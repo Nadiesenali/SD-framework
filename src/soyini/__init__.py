@@ -1,4 +1,4 @@
-"""Snow Drought Framework.
+"""SOYINI — a Python framework for snow drought monitoring and analysis.
 
 Reusable building blocks for the Alberta snow-drought detection and
 classification workflows. The scientific narrative and step-by-step

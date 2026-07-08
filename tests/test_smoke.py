@@ -1,4 +1,4 @@
-"""Smoke + sanity tests for the sdframework package.
+"""Smoke + sanity tests for the soyini package.
 
 The full pipeline can't run end-to-end here (the CaSR data tree isn't in the
 repo), so these tests exercise every moved function on small synthetic data and
@@ -8,7 +8,7 @@ check invariants, plus a couple of exact-value checks for the pure helpers.
 import numpy as np
 import pandas as pd
 
-from sdframework import (
+from soyini import (
     classification,
     config,
     constants,

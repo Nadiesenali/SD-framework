@@ -9,6 +9,7 @@ dist/
 .ipynb_checkpoints/
 
 # Data tree (kept outside the repo; see README)
+SOYINI/
 Snow_Drought_Framework/
 *.nc
 
