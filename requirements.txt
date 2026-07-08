@@ -1,0 +1,18 @@
+# Runtime dependencies for the Snow Drought Framework notebooks and package.
+# For development, prefer `pip install -e .` which reads pyproject.toml.
+numpy
+pandas
+xarray
+geopandas
+rasterio
+rasterstats
+shapely
+scipy
+scikit-learn
+matplotlib
+netcdf4
+h5py
+pyyaml
+tqdm
+seaborn
+dask

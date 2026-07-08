@@ -1,0 +1,20 @@
+# Central path configuration for the Snow Drought Framework.
+#
+# The notebooks read data from an external data tree that is NOT stored in the
+# repository (the CaSR NetCDFs, DEM tiles and Alberta shapefiles are large).
+#
+# `data_root` is the base directory that contains `input_data/`, `output_data/`
+# and `output_plots/`. Resolution order (first match wins):
+#   1. The SD_DATA_ROOT environment variable, if set.
+#   2. The `data_root` value below, if not null.
+#   3. The historical default: a `Snow_Drought_Framework/Data` folder sitting
+#      next to this repository (i.e. <repo>/../Snow_Drought_Framework/Data).
+#
+# Set an absolute path here (or via SD_DATA_ROOT) to point at your own data.
+data_root: null
+
+# Sub-directory names under data_root. Change only if your layout differs.
+subdirs:
+  input_data: input_data
+  output_data: output_data
+  output_plots: output_plots
