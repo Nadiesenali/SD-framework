@@ -1,0 +1,18 @@
+# Python build / cache artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data tree (kept outside the repo; see README)
+Snow_Drought_Framework/
+*.nc
+
+# Environments
+.venv/
+venv/
+env/

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdframework"
+version = "0.1.0"
+description = "Snow drought detection and classification framework for Alberta (CaSR reanalysis)."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray",
+    "geopandas",
+    "rasterio",
+    "rasterstats",
+    "shapely",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "netcdf4",
+    "h5py",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
