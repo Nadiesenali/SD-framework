@@ -1,7 +1,19 @@
-# Snow Drought Framework (SD-framework)
+# SOYINI
 
-A research pipeline for **detecting and classifying snow droughts in Alberta, Canada**
-from the [CaSR](https://weather.gc.ca/) reanalysis (snow-water-equivalent + precipitation)
+A Python framework for snow drought monitoring and analysis.
+
+> Named after the Blackfoot word *soyini*, describing winter weather
+> changing to milder, warmer conditions—a transition that underlies many
+> warm snow droughts in western Canada.
+
+This project acknowledges that it was developed on the traditional territories
+of the Blackfoot Confederacy, Stoney Nakoda Nations, Tsuu T'ina Nation, and the
+Métis Nation of Alberta.
+
+---
+
+SOYINI detects and classifies snow droughts in Alberta, Canada from the
+[CaSR](https://weather.gc.ca/) reanalysis (snow-water-equivalent + precipitation)
 combined with a DEM-derived elevation classification.
 
 The scientific narrative and step-by-step orchestration live in the
@@ -11,7 +23,7 @@ notebooks import lives in the installable `sdframework` package under `src/`.
 ## Layout
 
 ```
-SD-framework/
+SOYINI/
 ├── pyproject.toml            # installable package metadata
 ├── requirements.txt          # runtime deps (or use `pip install -e .`)
 ├── config/
@@ -92,3 +104,11 @@ python -m pytest -q
 
 The tests run the moved functions on small synthetic data (the full pipeline
 can't run without the external data tree) and check the key invariants.
+
+## Name & acknowledgment
+
+**SOYINI** takes its name from the Blackfoot word *soyini*, for the shift from
+cold winter weather to milder, warmer conditions—the very transition that drives
+many *warm* snow droughts in western Canada. This work was carried out on the
+traditional territories of the Blackfoot Confederacy, the Stoney Nakoda Nations,
+the Tsuu T'ina Nation, and the Métis Nation of Alberta.
