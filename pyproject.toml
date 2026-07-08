@@ -3,9 +3,9 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sdframework"
+name = "soyini"
 version = "0.1.0"
-description = "Snow drought detection and classification framework for Alberta (CaSR reanalysis)."
+description = "SOYINI - snow drought monitoring and analysis framework for Alberta (CaSR reanalysis)."
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [

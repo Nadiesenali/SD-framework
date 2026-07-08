@@ -18,7 +18,7 @@ combined with a DEM-derived elevation classification.
 
 The scientific narrative and step-by-step orchestration live in the
 `workflows/*.ipynb` notebooks. The reusable, deduplicated machinery those
-notebooks import lives in the installable `sdframework` package under `src/`.
+notebooks import lives in the installable `soyini` package under `src/`.
 
 ## Layout
 
@@ -28,7 +28,7 @@ SOYINI/
 ├── requirements.txt          # runtime deps (or use `pip install -e .`)
 ├── config/
 │   └── paths.yaml            # where your data tree lives (data_root)
-├── src/sdframework/          # the reusable package
+├── src/soyini/          # the reusable package
 │   ├── config.py             # path resolution (no more cwd/sys.path hacks)
 │   ├── io.py                 # load_basin_data / load_csv_data / load_nc_data
 │   ├── constants.py          # elevation order, thresholds, colour maps
@@ -47,8 +47,8 @@ SOYINI/
 python -m pip install -e .
 ```
 
-This installs the `sdframework` package in editable mode, so the notebooks can
-simply `import sdframework` and you can keep editing the package in place.
+This installs the `soyini` package in editable mode, so the notebooks can
+simply `import soyini` and you can keep editing the package in place.
 
 ## Data
 
@@ -58,7 +58,7 @@ ways (first match wins):
 
 1. The `SD_DATA_ROOT` environment variable.
 2. The `data_root:` value in [`config/paths.yaml`](config/paths.yaml).
-3. The historical default: a `Snow_Drought_Framework/Data` folder sitting next
+3. The historical default: a `SOYINI/Data` folder sitting next
    to this repository.
 
 `data_root` is expected to contain:
@@ -75,7 +75,7 @@ ways (first match wins):
 ```
 
 Output sub-directories are created automatically on demand
-(`sdframework.config.output_data(...)` / `output_plots(...)`).
+(`soyini.config.output_data(...)` / `output_plots(...)`).
 
 ## The pipeline (run notebooks in order)
 

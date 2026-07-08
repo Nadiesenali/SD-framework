@@ -1,4 +1,4 @@
-"""Shared constants for the Snow Drought Framework.
+"""Shared constants for the SOYINI framework.
 
 Centralizes values that were previously re-typed in several notebooks:
 elevation ordering, the SWEI/SPI drought threshold, the climatology period,

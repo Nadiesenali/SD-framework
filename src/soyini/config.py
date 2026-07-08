@@ -1,12 +1,12 @@
-"""Central path configuration for the Snow Drought Framework.
+"""Central path configuration for the SOYINI framework.
 
 This replaces the per-notebook ``project_root = Path.cwd().parent.parent`` /
-``sys.path.append`` boilerplate and the hard-coded ``Snow_Drought_Framework/Data``
+``sys.path.append`` boilerplate and the hard-coded ``SOYINI/Data``
 paths (which also fixes the ``DATA`` vs ``Data`` casing bug in notebook 02).
 
 Typical use in a notebook::
 
-    from sdframework import config
+    from soyini import config
 
     shapefile = config.output_data("elevation", "Alberta_elevation_combined.shp")
     swei_dir  = config.output_data("SWEI")          # created if missing
@@ -16,7 +16,7 @@ The base data directory is resolved once, in this order:
 
 1. ``SD_DATA_ROOT`` environment variable, if set.
 2. ``data_root`` in ``config/paths.yaml``, if not null.
-3. The historical default ``<repo>/../Snow_Drought_Framework/Data``.
+3. The historical default ``<repo>/../SOYINI/Data``.
 """
 
 from __future__ import annotations
@@ -27,14 +27,14 @@ from pathlib import Path
 
 import yaml
 
-# Repo root is two levels above this file: src/sdframework/config.py -> repo/
+# Repo root is two levels above this file: src/soyini/config.py -> repo/
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PATHS_YAML = REPO_ROOT / "config" / "paths.yaml"
 
 # Historical default used by the original notebooks:
 #   project_root = Path.cwd().parent.parent  (parent of the repo)
-#   data_root    = project_root / "Snow_Drought_Framework" / "Data"
-_DEFAULT_DATA_ROOT = REPO_ROOT.parent / "Snow_Drought_Framework" / "Data"
+#   data_root    = project_root / "SOYINI" / "Data"
+_DEFAULT_DATA_ROOT = REPO_ROOT.parent / "SOYINI" / "Data"
 
 
 @lru_cache(maxsize=1)

@@ -1,4 +1,4 @@
-"""Reusable plots for the Snow Drought Framework.
+"""Reusable plots for the SOYINI framework.
 
 Extracts the repeated matplotlib setup from notebooks 03/04 (SWEI/SPI seasonal
 heatmaps) and 05 (classification scatter + heatmap). Each function optionally

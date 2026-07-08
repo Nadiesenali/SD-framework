@@ -3,7 +3,7 @@
 ``compute_swei`` and ``spi_pipeline`` are kept as separate entry points (their
 standardization differs: SWEI uses a Gringorten plotting position, SPI a mixed
 gamma fit), but both reuse the seasonal aggregation helpers in
-:mod:`sdframework.seasonal`.
+:mod:`soyini.seasonal`.
 """
 
 from __future__ import annotations
