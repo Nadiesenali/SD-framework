@@ -3,8 +3,8 @@
 A Python framework for snow drought monitoring and analysis.
 
 > Named after the Blackfoot word *soyini*, describing winter weather
-> changing to milder, warmer conditions—a transition that underlies many
-> warm snow droughts in western Canada.
+> changing to milder, warmer conditions - a transition that underlies many
+> warm snow droughts.
 
 This project acknowledges that it was developed on the traditional territories
 of the Blackfoot Confederacy, Stoney Nakoda Nations, Tsuu T'ina Nation, and the
@@ -107,8 +107,7 @@ can't run without the external data tree) and check the key invariants.
 
 ## Name & acknowledgment
 
-**SOYINI** takes its name from the Blackfoot word *soyini*, for the shift from
-cold winter weather to milder, warmer conditions—the very transition that drives
-many *warm* snow droughts in western Canada. This work was carried out on the
+**SOYINI** takes its name from the Blackfoot word *soyini* (https://blackfoot.algonquianlanguages.ca/), which is used to discribe the winter weather change to a milder, warmer temperature, warmer conditions—the very transition that drives
+many *warm* snow droughts. The aurthors aknowledges and pays tribute to the land where this work was carried out, the
 traditional territories of the Blackfoot Confederacy, the Stoney Nakoda Nations,
-the Tsuu T'ina Nation, and the Métis Nation of Alberta.
+the Tsuu T'ina Nation, and the Métis Nation of Alberta. 
