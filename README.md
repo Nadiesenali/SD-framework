@@ -1,20 +1,19 @@
 # SOYINI
 
-A Python framework for snow drought monitoring and analysis.
+A Python framework for assessing and analysing snow drought.
 
 > Named after the Blackfoot word *soyini*, describing winter weather
 > changing to milder, warmer conditions - a transition that underlies many
 > warm snow droughts.
 
-This project acknowledges that it was developed on the traditional territories
+The project name was choosen to acknowledge the land where the traditional territories
 of the Blackfoot Confederacy, Stoney Nakoda Nations, Tsuu T'ina Nation, and the
 Métis Nation of Alberta.
 
 ---
 
-SOYINI detects and classifies snow droughts in Alberta, Canada from the
-[CaSR](https://weather.gc.ca/) reanalysis (snow-water-equivalent + precipitation)
-combined with a DEM-derived elevation classification.
+SOYINI identifies and classifies snow droughts in the Bow River Basin, Alberta, Canada from the
+data obatin from Canadian Surface Reaanalysis v3.2[CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/download_CaSR_regions_var_period.html) dataset (snow-water-equivalent (SWE) + 24hr precipitation), combined with CanSWEv7 (https://doi.org/10.5281/zenodo.4734371)  historic SWE dataset.
 
 The scientific narrative and step-by-step orchestration live in the
 `workflows/*.ipynb` notebooks. The reusable, deduplicated machinery those
@@ -38,7 +37,7 @@ SOYINI/
 │   └── plotting.py           # seasonal index heatmaps + classification plots
 ├── tests/                    # synthetic-data smoke/sanity tests
 └── workflows/                # the five notebooks (run in order)
-```
+``o`
 
 ## Setup
 
