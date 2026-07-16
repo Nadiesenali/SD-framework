@@ -13,7 +13,7 @@ Métis Nation of Alberta.
 ---
 
 SOYINI identifies and classifies snow droughts in the Bow River Basin, Alberta, Canada from the
-data obatin from Canadian Surface Reaanalysis v3.2[CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/download_CaSR_regions_var_period.html) dataset (snow-water-equivalent (SWE) + 24hr precipitation), combined with CanSWEv7 (https://doi.org/10.5281/zenodo.4734371)  historic SWE dataset.
+data obatin from Canadian Surface Reaanalysis v3.2 [CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/download_CaSR_regions_var_period.html) dataset (snow-water-equivalent (SWE) + 24hr precipitation), combined with [CanSWEv7](https://doi.org/10.5281/zenodo.4734371)  historic SWE dataset.
 
 The scientific narrative and step-by-step orchestration live in the
 `workflows/*.ipynb` notebooks. The reusable, deduplicated machinery those
